@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>My First JS Page</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>I'm in SDEV 117</h1>
+		<p>This is my first page using Javascript!</p>
+
+		<script>
+			//change an element on my page
+			let heading = document.querySelector("h1");
+			heading.innerHTML = "I'm in SDEV 117 (Javascript)";
+
+            let paragraph = document.querySelector("p");
+            paragraph.innerHTML += "<br>Here is a random number: " + Math.random();
+		</script>
+	</body>
+</html>
+
+
