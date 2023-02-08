@@ -28,3 +28,17 @@ let colorNames = [
     "Tomato", "Turquoise", "Violet", "Wheat", "White", "WhiteSmoke", "Yellow",
     "YellowGreen",
 ];
+
+let body = document.querySelector("tbody");
+
+for (let i = 0; i < colorNames.length; i++)
+{
+    let color = colorNames[i];
+
+    //<tr><td>Color Name</td><td></td></tr>
+    let nameTd = `<td>${color}</td>`;
+    let exampleTd = `<td style="background-color: ${color}"></td>`;
+    let row = `<tr>${nameTd}${exampleTd}</tr>`
+
+    body.innerHTML += row;
+}
