@@ -1,12 +1,11 @@
-//change links
-let links = document.getElementsByTagName("a");
+//select the first link and change it
+let first = document.querySelector("a");
 
-let first = links[0];
-first.textContent = "Adblock Plus";
-first.setAttribute("href", "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/");
+//change the HTML attributes
+first.href = "https://addons.mozilla.org/en-US/firefox/addon/grammarly-1/";
+first.textContent = "Grammarly";
+first.target = "blank";
 
-let second = links[1];
-second.textContent = "Https Everywhere";
-second.setAttribute("href", "https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/");
-
-let third = links[2];
+first.setAttribute("href", "https://addons.mozilla.org/en-US/firefox/addon/darkreader/");
+first.textContent = "Dark Reader";
+first.setAttribute("target", "_blank");
