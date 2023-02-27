@@ -1,0 +1,9 @@
+/* turn the section into a grid */
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    width: 500px;
+}
