@@ -1,13 +1,11 @@
 window.onload = function() {
     let textbox = document.getElementById("textbox");
-    textbox.onkeypress = record;
+    textbox.onkeydown = record;
 }
 
 function record(event)
 {
     let key = event.key;
-    let code = event.code;
-
-    console.log(key + " - " + code);
+    console.log(key);
 }
 
