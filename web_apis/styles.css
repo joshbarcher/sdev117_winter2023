@@ -1,0 +1,32 @@
+html {
+    background-color: saddlebrown;
+}
+
+main {
+    /* creates a fixed layout */
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+    border: 2px solid #00002d;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button, img {
+    display: block;
+    margin: auto;
+}
+
+img {
+    width: 400px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+
+    /* hide the image initially */
+    display: none;
+}
+
