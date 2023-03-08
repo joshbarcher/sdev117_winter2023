@@ -6,7 +6,7 @@ window.onload = function() {
 
 function requestCat()
 {
-    let address = "https://api.thecatapi.com/v1/images/search";
+    let address = "https://api.thecatapi.com/v1/images/search?limit=10";
     let configuration = {
         method: "get",
         mode: "cors",
@@ -21,16 +21,29 @@ function requestCat()
             return response.json();
         })
         .then(function(data) {
-            displayCat(data[0]);
+            displayCats(data);
         });
 }
 
-function displayCat(cat)
+function displayCats(catArray)
 {
-    let image = document.querySelector("img");
-    image.src = cat.url;
+    //select the section to hold all cat images
+    let mySection = document.querySelector("#images-area");
 
-    //show the image
-    image.style.display = "block";
+    //first remove any old images in the section
+    mySection.innerHTML = "";
+
+    for (let i = 0; i < catArray.length; i++)
+    {
+        let cat = catArray[i];
+
+        //this is one of the things I'm gonna do in
+        //our last assignment
+        let newImage = document.createElement("img");
+        newImage.src = cat.url;
+        newImage.alt = "A random cat image";
+
+        mySection.appendChild(newImage);
+    }
 }
 
