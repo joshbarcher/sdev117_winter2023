@@ -37,6 +37,23 @@
                 </section>
             </fieldset>
 
+			<fieldset>
+				<legend>Film Properties</legend>
+
+				<section>
+					<input type="checkbox" name="recent" id="recent" value="recent-yes">
+					<label for="recent">Recently released (last 5 years)</label>
+				</section>
+				<section>
+					<input type="checkbox" name="released-us" id="released-us" value="US-release-yes">
+					<label for="released-us">Was this released in the US?</label>
+				</section>
+				<section>
+					<input type="checkbox" name="stinger" id="stinger" value="stinger-yes">
+					<label for="stinger">Is there a scene in the credits?</label>
+				</section>
+			</fieldset>
+
             <fieldset>
                 <legend>Properties</legend>
                 <section>
@@ -59,7 +76,7 @@
                     </select>
                 </section>
             </fieldset>
-            <button>Submit!</button>
+            <button type="submit">Submit!</button>
         </form>
 
         <div id="summary">
